@@ -11,31 +11,41 @@
 </head>
 
 <body>
+<main aria-labelledby="h1">
+    <h1 id="h1">Insurance form</h1>
 
-<form type="submit" method="post" action="https://html-form.free.beeceptor.com">
-    <fieldset>
-        <legend>Personal details</legend>
+    <form method="post" action="https://html-form.free.beeceptor.com">
+        <fieldset>
+            <legend>Personal details</legend>
 
-        <label for="name">Name</label>
-        <input name="name" id="name" type="text" />
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="John" />
+            </div>
 
-        <label for="last-name">Last Name</label>
-        <input name="last-name" id="last-name" type="text" />
-    </fieldset>
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input name="last-name" id="last-name" type="text" placeholder="Smith" />
+            </div>
+        </fieldset>
 
-    <fieldset>
-        <legend>Home insurance details</legend>
+        <fieldset>
+            <legend>Home insurance details</legend>
 
-        <label for="address-line-1">Address</label>
-        <input name="address1" id="address-line-1" type="text" />
+            <div class="input-group">
+                <label for="address-line-1">Address</label>
+                <input name="address1" id="address-line-1" type="text" placeholder="Long road 1" />
+            </div>
 
-        <label for="area">Area in square meters</label>
-        <input name="area" id="area" type="number" />
-    </fieldset>
+            <div class="input-group">
+                <label for="area">Area in square meters</label>
+                <input name="area" id="area" type="number" placeholder="56" />
+            </div>
+        </fieldset>
 
-    <button>Submit</button>
-</form>
-
+        <button>Submit</button>
+    </form>
+</main>
 </body>
 
 </html>

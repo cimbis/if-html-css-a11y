@@ -1,0 +1,75 @@
+/* set our own defaults and remove some of the browser defaults */
+html, body {
+    margin: 0;
+    background-color: #f1ece8;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    padding: 1rem 2rem;
+}
+
+form {
+    padding: 2rem;
+    background-color: #faf9f7;
+}
+
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    border: none;
+}
+
+form > fieldset > legend {
+    padding: 0 0 1rem;
+    font-weight: bolder;
+}
+
+form input, button {
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+
+form label {
+    margin: 0 0 0.5rem;
+}
+
+form input {
+    padding: 0 1rem;
+    border: 0.0125rem solid black;
+}
+
+form input:active {
+    border: 0.025rem solid blue;
+}
+
+form input::placeholder {
+    color: #6E625E99;
+}
+
+form button {
+    width: 15rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    background-color: blue;
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+    cursor: pointer;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin: 0 0 1rem;
+}
+
+
+
+
