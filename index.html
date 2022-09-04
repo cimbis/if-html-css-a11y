@@ -11,8 +11,28 @@
 
 <body>
 
-<form>
-    <!--    @TDOO: create a form   -->
+<form type="submit" method="post" action="https://html-form.free.beeceptor.com">
+    <fieldset>
+        <legend>Personal details</legend>
+
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text" />
+
+        <label for="last-name">Last Name</label>
+        <input name="last-name" id="last-name" type="text" />
+    </fieldset>
+
+    <fieldset>
+        <legend>Home insurance details</legend>
+
+        <label for="address-line-1">Address</label>
+        <input name="address1" id="address-line-1" type="text" />
+
+        <label for="area">Area in square meters</label>
+        <input name="area" id="area" type="number" />
+    </fieldset>
+
+    <button>Submit</button>
 </form>
 
 </body>
