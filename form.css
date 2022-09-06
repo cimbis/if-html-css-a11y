@@ -14,7 +14,7 @@ form > fieldset {
     border: none;
 }
 
-form > fieldset > legend {†
+form > fieldset > legend {    
     padding: 0 0 1rem;
     font-weight: bolder;
 }
