@@ -1,75 +1,61 @@
-/* set our own defaults and remove some of the browser defaults */
+/* set our own defaults and override some of the browser defaults */
 html, body {
     margin: 0;
     background-color: #f1ece8;
     font-family: Arial, sans-serif;
 }
 
+body.prevent-scroll {
+    overflow: hidden;
+}
+
+.sr-only {
+    position: absolute;
+    height: .0625rem;
+    width: .0625rem;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 h1 {
     padding: 1rem 2rem;
 }
 
-form {
-    padding: 2rem;
-    background-color: #faf9f7;
-}
-
-form > fieldset {
+.button-group {
     display: flex;
-    flex-direction: column;
-    margin: 0 0 1.5rem;
-    padding: 0;
-    border: none;
+    justify-content: space-between;
 }
 
-form > fieldset > legend {
-    padding: 0 0 1rem;
-    font-weight: bolder;
+.button-group > button:not(:last-child) {
+    margin-right: 1rem;
 }
 
-form input, button {
-    height: 2.5rem;
-    border-radius: .25rem;
-}
-
-form label {
-    margin: 0 0 0.5rem;
-}
-
-form input {
-    padding: 0 1rem;
-    border: 0.0125rem solid black;
-}
-
-form input:active {
-    border: 0.025rem solid blue;
-}
-
-form input::placeholder {
-    color: #6E625E99;
-}
-
-form button {
-    width: 15rem;
+button {
+    min-width: 8rem;
     margin: 0;
     padding: 0;
-    border: none;
     color: white;
     background-color: blue;
+    border: 0.0625rem solid blue;
 }
 
-form button:hover {
+button:hover {
     background-color: rgba(0, 0, 255, 0.8);
     cursor: pointer;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
-    margin: 0 0 1rem;
+button:focus-visible {
+    outline: 0.0625rem solid blue;
+    outline-offset: 0.125rem;
 }
 
+button.secondary {
+    background-color: transparent;
+    color: black;
+    border: 0.0625rem solid blue;
+}
 
-
-
+div:focus-visible {
+    outline: none;
+}

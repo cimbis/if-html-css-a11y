@@ -1,0 +1,55 @@
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 98, 94, .4);
+}
+
+.backdrop.is-open {
+    display: block;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 2rem;
+    overflow-y: scroll;
+    border: 0.0625rem solid grey;
+    border-radius: .5rem;
+    box-shadow: 0 0.2rem 1rem grey;
+    background-color: #faf9f7;
+    z-index: 1000;
+}
+
+.modal.is-open {
+    display: flex;
+}
+
+.modal .title {
+    background-color: #f1ece8;
+}
+
+.modal .content {
+    padding: 2rem;
+}
+
+@media screen and (max-width: 48rem) {
+    .modal {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}

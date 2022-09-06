@@ -7,46 +7,96 @@
 
     <title>HTML</title>
 
+    <!--    split styles    -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="scripts.js"></script>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <link href="modal.css" rel="stylesheet" type="text/css" />
+    <link href="page.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://unpkg.com/tabbable/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/focus-trap/dist/focus-trap.umd.js"></script>
 </head>
 
+<!--    prevent scroll when modal open  -->
 <body>
-<main aria-labelledby="h1">
-    <h1 id="h1">Insurance form</h1>
 
-    <form method="post" action="https://html-form.free.beeceptor.com">
-        <fieldset>
-            <legend>Personal details</legend>
+<main aria-label="User insurance detail view">
 
-            <div class="input-group">
-                <label for="name">Name</label>
-                <input name="name" id="name" type="text" placeholder="John" />
+    <div class="header">A header</div>
+    <div class=container>
+        <button id="insurance-edit">Edit</button>
+
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+
+
+        <div class="backdrop"></div>
+
+        <div class="modal"
+             aria-modal="true"
+             role="dialog"
+             aria-labelledby="label"
+             aria-describedby="description"
+        >
+            <div class="title">
+                <h1 id="label">Insurance form</h1>
             </div>
 
-            <div class="input-group">
-                <label for="last-name">Last Name</label>
-                <input name="last-name" id="last-name" type="text" placeholder="Smith" />
+            <span class="sr-only" id="description">
+                Insurance details edit modal
+            </span>
+
+            <div class="content">
+                <form>
+                    <fieldset>
+                        <legend>Personal details</legend>
+
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input name="name" id="name" type="text" placeholder="John" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input name="last-name" id="last-name" type="text" placeholder="Smith" />
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Home insurance details</legend>
+
+                        <div class="input-group">
+                            <label for="address-line-1">Address</label>
+                            <input name="address1" id="address-line-1" type="text" placeholder="Long road 1" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="area">Area in square meters</label>
+                            <input name="area" id="area" type="number" placeholder="56" />
+                        </div>
+                    </fieldset>
+
+                    <div class="button-group">
+                        <button id="submit" type="submit">Submit</button>
+                        <button class="secondary" id="cancel">Cancel</button>
+                    </div>
+                </form>
             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Home insurance details</legend>
-
-            <div class="input-group">
-                <label for="address-line-1">Address</label>
-                <input name="address1" id="address-line-1" type="text" placeholder="Long road 1" />
-            </div>
-
-            <div class="input-group">
-                <label for="area">Area in square meters</label>
-                <input name="area" id="area" type="number" placeholder="56" />
-            </div>
-        </fieldset>
-
-        <button>Submit</button>
-    </form>
+        </div>
+    </div>
 </main>
+
+<script src="scripts.js"></script>
 </body>
 
 </html>
