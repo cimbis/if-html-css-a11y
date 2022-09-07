@@ -1,0 +1,70 @@
+:root {
+    --form-element-height: 2rem;
+    --form-element-border-radius: 0.25rem;
+    --background-color: #f1ece8; 
+
+    --form-element-padding: var(--form-element-height);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: darkgrey; 
+    }
+}
+
+
+html, body {
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.prevent-scroll {
+    overflow: hidden;
+}
+
+form {
+    padding: 1rem; /* 1 * default browser font size = 16px */
+}
+
+fieldset {
+    padding: 0;
+    margin: 0 0 2rem;
+    border: none;
+}
+
+fieldset > legend {
+    padding: 0;
+    margin: 0 0 0.5rem;
+    font-weight: bolder;
+}
+
+input {
+    height: var(--form-element-height);
+    border: 0.0625rem solid grey;
+    border-radius: var(--form-element-border-radius);
+    padding: 0 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.5rem;
+}
+
+button {
+    height: var(--form-element-height);
+    background-color: blue;
+    border-radius: var(--form-element-border-radius);
+    color: white;
+}
+
+button.secondary {
+    background-color: transparent;
+    color: black;
+}
+
+button:focus-visible {
+    outline: 0.125rem dashed blue;
+    outline-offset: 0.125rem;
+}
+
