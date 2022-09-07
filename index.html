@@ -11,11 +11,32 @@
 
 <body>
 
-<form>
-    <!--    @TDOO: create a form   -->
-</form>
+    <form action="https://myapi.com">
+        <!--     personal details -->
+        <fieldset>
+            <legend>Personal details</legend>
+
+            <label for="first-name">First name</label>
+            <input id="first-name" type="text" placeholder="First name">
+
+            <label for="last-name">Last name</label>
+            <input id="last-name" type="text" placeholder="Last name">
+        </fieldset>
+
+        <!--     property details -->
+        <fieldset>
+            <legend>Property details</legend>
+
+            <label for="address">Address</label>
+            <input id="address" type="text" placeholder="Long road 1">
+
+            <label for="area">Area in sq m</label>
+            <input id="area" type="number" placeholder="56">
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 
 </html>
-
