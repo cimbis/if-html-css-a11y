@@ -46,7 +46,7 @@ button:hover {
 }
 
 button:focus-visible {
-    outline: 0.0625rem solid blue;
+    outline: 0.125rem dashed blue;
     outline-offset: 0.125rem;
 }
 
@@ -58,4 +58,20 @@ button.secondary {
 
 div:focus-visible {
     outline: none;
+}
+
+.header {
+    max-height: 5rem;
+    padding: 2rem;
+    background-color: #faf9f7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container > * {
+    margin-bottom: 2rem;
 }

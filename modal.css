@@ -40,7 +40,7 @@
     padding: 2rem;
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 30rem) {
     .modal {
         top: 0;
         left: 0;
